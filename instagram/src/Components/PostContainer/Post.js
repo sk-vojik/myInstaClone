@@ -77,7 +77,6 @@ class Post extends React.Component {
       </React.Fragment>
     )
   }
-  
 }
 
 Post.propTypes = {
