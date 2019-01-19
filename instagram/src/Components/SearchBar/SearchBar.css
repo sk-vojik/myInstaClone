@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.fa-instagram {
+  font-size: 3rem;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+.far {
+  margin: 8px 5%;
+  font-size: 2rem;
+  font-weight: lighter;
+}

@@ -1,0 +1,13 @@
+
+.post-icon-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-icon-container i {
+  margin: 12px 1.3% 0;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
