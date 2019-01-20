@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const StyledPostContainer = styled.div`
   width: 900px;
-  margin: 24px auto 0;
+  margin: 200px auto 0;
   border: 1px solid lightgray;
 `
 

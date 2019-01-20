@@ -3,11 +3,15 @@ import styled from 'styled-components';
 
 const SearchContainer = styled.div`
   display: flex;
-  margin: 16px 0;
+  margin: 0 0 64px;
   border-bottom: 1px solid lightgray;
   padding-bottom: 20px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
 `
 
 const LogoContainer = styled.div`

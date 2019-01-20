@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar/SearchBar'
 import PostContainer from '../PostContainer/PostContainer'
 import styled from 'styled-components'
 
-const App = styled.div`
+const PostsPagStyled = styled.div`
   text-align: center;
 `
 
@@ -40,10 +40,10 @@ class PostsPage extends Component {
 
   render() {
     return (
-      <App>
+      <PostsPagStyled>
         <SearchBar search={this.searchUsers} handleSearch={this.handleSearch}/>
         <PostContainer instaDataList={this.state.searchPosts.length > 0 ? this.state.searchPosts : this.state.dataList}/>
-      </App>
+      </PostsPagStyled>
     );
   }
 }
