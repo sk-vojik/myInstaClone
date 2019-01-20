@@ -72,7 +72,7 @@ class Post extends React.Component {
         </div>
         <Likes>{this.state.likes} likes</Likes>
   
-        <CommentContainer comments={this.props.instaPost.comments}/>
+        {this.props.instaPost.comments ? <CommentContainer comments={this.props.instaPost.comments}/> : null}
   
       </React.Fragment>
     )
