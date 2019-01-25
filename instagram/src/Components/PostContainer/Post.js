@@ -62,14 +62,15 @@ class Post extends React.Component {
   
         <PostHeader>
           <UsertThumbnail src={this.props.instaPost.thumbnailUrl} alt="thumbnail"/>
-          <p>{this.props.instaPost.username}</p>
+          <PostUsername>{this.props.instaPost.username}</PostUsername>
         </PostHeader>
         <PostPicture src={this.props.instaPost.imageUrl} alt="user post" />
   
-        <div className="post-icon-container">
+        <PostIconContainer className="post-icon-container">
           <i className="far fa-heart" onClick={this.incrementLikes}></i>
           <i className="far fa-comment"></i>
-        </div>
+        </PostIconContainer>
+        
         <Likes>{this.state.likes} likes</Likes>
   
         {this.props.instaPost.comments ? <CommentContainer comments={this.props.instaPost.comments}/> : null}
