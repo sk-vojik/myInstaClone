@@ -3,8 +3,8 @@ import Post from "./Post"
 import styled from "styled-components"
 
 const StyledPostContainer = styled.div`
-  width: 900px;
-  margin: 200px auto 0;
+  width: 760px;
+  margin: 160px auto 48px;
   border: 1px solid lightgray;
   border-radius: 5px;
 `

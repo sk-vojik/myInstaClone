@@ -25,6 +25,7 @@ const PostUsername = styled.p`
 const PostPicture = styled.img`
   width: 100%;
   height: 900px;
+  object-fit: fill;
 `
 
 const PostIconContainer = styled.div`
@@ -67,7 +68,7 @@ class Post extends React.Component {
         <PostPicture src={this.props.instaPost.imageUrl} alt="user post" />
   
         <PostIconContainer className="post-icon-container">
-          <i className="far fa-heart" onClick={this.incrementLikes}></i>
+          {this.state.isLiked ? <i className="fas fa-heart" onClick={this.incrementLikes}></i> : <i className="far fa-heart" onClick={this.incrementLikes}></i>}
           <i className="far fa-comment"></i>
         </PostIconContainer>
         

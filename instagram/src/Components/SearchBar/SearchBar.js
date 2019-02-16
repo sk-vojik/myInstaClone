@@ -32,6 +32,7 @@ const InstaLogo = styled.img`
   height: 48px;
   margin-top: 20px;
   margin-left: 10px;
+  width: auto;
 `
 
 const SearchForm = styled.form`
@@ -45,6 +46,8 @@ const SearchInput = styled.input`
   text-align: center;
   font-size: 1.1rem;
   font-weight: bold;
+  max-width: 210px;
+  width: 100%;
 `
 
 const IconContainer = styled.div`
